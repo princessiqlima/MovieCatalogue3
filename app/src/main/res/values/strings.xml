@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <resources>
-    <string name="app_name">MovieCatalogue - Princess</string>
+    <string name="app_name">MovieCatalogue 2 - Princess</string>
     <string name="movie_title_txt">Movie Title</string>
     <string name="movie_date_txt">Movie Date</string>
     <string name="movie_synopsis_txt">
         Im Princess Iqlima Kafilla. I was born in Wonosobo. Now, I life in Purwokerto, Jawa Tengah.
-
     </string>
+    <string name="title_activity_main_navigation">MainNavigation</string>
+    <string name="title_movie">Movie</string>
+    <string name="title_tv_show">TV Show</string>
+    <string name="change_language">Change Language</string>
 
 </resources>

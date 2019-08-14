@@ -1,5 +1,6 @@
 package com.edicoding.picodiploma.moviecatalogue.adapter;
 
+import android.content.Context;
 import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -21,12 +22,22 @@ import com.edicoding.picodiploma.moviecatalogue.model.Movie;
 import java.util.ArrayList;
 
 public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.CardViewHolder> {
+    private Context context;
     private ArrayList<Movie> listMovie;
+    private OnItemClickListener mListener;
 
     public MovieAdapter(ArrayList<Movie> list){
         this.listMovie = list;
+        this.context = context;
     }
 
+    public interface OnItemClickListener{
+        void onItemClick(int position);
+    }
+
+    public void setOnItemClickListener(OnItemClickListener listener) {
+        mListener = listener;
+    }
     @NonNull
     @Override
     public CardViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {

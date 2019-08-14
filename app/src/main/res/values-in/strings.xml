@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">KatalogFilm 2 - Princess</string>
+    <string name="movie_title_txt">Judul Film</string>
+    <string name="movie_date_txt">Tanggal Film</string>
+    <string name="movie_synopsis_txt">
+        Saya Princess Iqlima Kafilla. Saya lahir di Wonosobo. Sekarang, Saya tinggal di Purwokerto, Jawa Tengah.
+    </string>
+    <string name="title_activity_main_navigation">Navigasi Utama</string>
+    <string name="title_movie">Film</string>
+    <string name="title_tv_show">Pertunjukan TV</string>
+    <string name="change_language">Ubah Bahasa</string>
+</resources>

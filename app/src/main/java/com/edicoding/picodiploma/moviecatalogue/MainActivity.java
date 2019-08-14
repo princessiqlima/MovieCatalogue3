@@ -4,7 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.provider.Settings;
+import android.view.MenuItem;
+import android.widget.TextView;
 
 import com.edicoding.picodiploma.moviecatalogue.adapter.MovieAdapter;
 import com.edicoding.picodiploma.moviecatalogue.model.Movie;
@@ -34,4 +38,12 @@ public class MainActivity extends AppCompatActivity {
         rvCategory.setAdapter(cardViewStudentAdapter);
     }
 
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if (item.getItemId() == R.id.action_change_settings){
+            Intent mIntent = new Intent(Settings.ACTION_LOCALE_SETTINGS);
+            startActivity(mIntent);
+        }
+        return super.onOptionsItemSelected(item);
+    }
 }
